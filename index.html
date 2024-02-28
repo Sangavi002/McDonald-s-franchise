@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> McDonalds</title>
+</head>
+<style>
+    .order-card {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        /* align-items: center; */
+        margin-top: 40px;
+        /* background: #e6e6e8; */
+        padding: 24px 5px;
+        border-radius: 12px;
+    }
+    p {
+        margin: 2px;
+    }
+    section {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    button {
+        width: 100px;
+        padding: 5px 10px;
+    }
+    #food-item {
+        text-align: center;
+        font-size: 18px;
+    }
+    
+</style>
+<body>
+    <section class="container">
+        <label><input type="checkbox" class="food" value="Burger"> Burger</label><br>
+        <label><input type="checkbox" class="food" value="McPuff"> McPuff</label><br>
+        <label><input type="checkbox" class="food" value="Wrap"> Wrap</label><br>
+        <label><input type="checkbox" class="food" value="Cold_drink"> Cold Drink</label><br>
+        <label><input type="checkbox" class="food" value="Coffee"> Coffee</label><br>
+        
+        
+        <button>Order Food</button>
+
+        <div class="order-card">
+            <div id = "ordered-items" >
+                <!-- Add code here -->
+            </div>
+    
+            <div id = "order-id" ></div>
+        </div>
+    </section>
+    <script src="./mcDonalds.js"></script>
+</body>
+</html>
